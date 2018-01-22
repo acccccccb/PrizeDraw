@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>海得视年会抽奖</title>
+    <script src="js/jquery_2.1.4_jquery.min.js"></script>
+    <script src="js/PrizeDraw.js"></script>
+    <link rel="stylesheet" href="css/PrizeDraw.css"/>
+</head>
+<body>
+    <div class="bigtit">
+        海得视2018年年会
+    </div>
+    <div class="smtit">
+        <span>幸运抽奖</span>
+    </div>
+    <div class="namebox-hidescroll">
+        <div class="namebox-tit">
+            <span id="lucky">准备抽奖</span><span class="info">(<b id="namenum"></b>/<b id="total"></b>)</span>
+        </div>
+        <div class="gift-and-namelist">
+            <div class="giftbox">
+                <div class="giftbox-list gift-1" style="display:none;" >
+                </div>
+                <div class="giftbox-list gift-2" style="display:none;" >
+                </div>
+                <div class="giftbox-list gift-3" style="display:none;" >
+                </div>
+                <div class="giftbox-list gift-4" style="display:none;" >
+                </div>
+            </div>
+            <div class="namebox-main">
+                <div class="namebox">
+                    <div id="ScrollBox"></div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn" id="taideng" >一等奖</button>
+        <button class="btn" id="yehuangsu" >二等奖</button>
+        <button class="btn" id="lipumei" >三等奖</button>
+        <button class="btn" id="jieshouru" >四等奖</button>
+    </div>
+    <button class="reset" id="restart" >重新抽奖</button>
+    <div id="Animate">
+        <!-- 动画效果 -->
+        抽奖开始
+    </div>
+    <div id="AudioPlayer"></div>
+    <div class="scroll-group">
+        <div class="scroll scroll-left-1">
+            <img src="images/scroll.png" alt="">
+        </div>
+        <div class="scroll scroll-left-2">
+            <img src="images/scroll.png" alt="">
+        </div>
+        <div class="scroll scroll-left-3">
+            <img src="images/scroll.png" alt="">
+        </div>
+        <div class="scroll scroll-left-4">
+            <img src="images/scroll.png" alt="">
+        </div>
+
+
+        <div class="scroll scroll-right-1">
+            <img src="images/scroll.png" alt="">
+        </div>
+        <div class="scroll scroll-right-2">
+            <img src="images/scroll.png" alt="">
+        </div>
+        <div class="scroll scroll-right-3">
+            <img src="images/scroll.png" alt="">
+        </div>
+        <div class="scroll scroll-right-4">
+            <img src="images/scroll.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

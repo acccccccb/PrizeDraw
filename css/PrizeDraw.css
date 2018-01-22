@@ -1,0 +1,261 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+body {
+    width:100%;
+    height:100%;
+    background:url("../images/bg.jpg") no-repeat center top;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    font-family:"微软雅黑","Microsoft YaHei";
+}
+
+.bigtit {
+    margin:56px auto 10px auto;
+    text-align:center;
+    color:#fff;
+    text-shadow:0 0 6px yellow;
+    font-size:48px;
+    font-weight:bold;
+}
+.smtit {
+    margin:10px auto;
+    text-align:center;
+    color:yellow;
+    font-size:38px;
+    font-weight:bold;
+}
+
+.col {display:none;}
+.col-tit {
+    font-weight:bold;
+}
+.namebox-hidescroll {
+    background:black;
+    width:80%;
+    height:360px;
+    margin:30px auto;
+    border-radius: 20px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.1);
+    border:5px solid yellow;
+}
+.duang {
+    animation:duang .1s alternate infinite;
+}
+.namebox-tit {
+    height:50px;
+    line-height:50px;
+    width:102%;
+    text-align:center;
+    color:#fff;
+    text-shadow:0 0 6px yellow;
+    background:url(../images/Mainbar.png) no-repeat center top;
+    background-size:100% 100%;
+    font-size:28px;
+}
+.gift-and-namelist {
+    width:103%;
+}
+.giftbox {
+    width:29%;
+    height:310px;
+    float:left;
+    background:url(../images/gift/gift-bg.png) center center no-repeat;
+    background-size:150% 150%;
+    border-right:1px solid #960a09;
+}
+
+.giftbox-list {
+    overflow:hidden;
+    text-align:center;
+    width:100%;
+    height:100%;
+}
+.gift-1 {
+    background: url(../images/gift/2.png) center center no-repeat;
+    background-size:contain;
+}
+.gift-2 {
+    background: url(../images/gift/3.png) center center no-repeat;
+    background-size:contain;
+}
+.gift-3 {
+    background: url(../images/gift/4.png) center center no-repeat;
+    background-size:contain;
+}
+.gift-4 {
+    background: url(../images/gift/5.png) center center no-repeat;
+    background-size:contain;
+}
+
+.giftbox-list img {
+    width:auto;
+    height: 310px;
+}
+.namebox-main {
+    width:70%;
+    float:left;
+    margin:auto;
+    height:310px;
+    text-align:center;
+    overflow-y: scroll;
+    height:310px;
+}
+.namebox {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.namelist {
+    color:#fff;
+    padding:5px;
+    display:none;
+    font-size:32px;
+    text-shadow:0 0 6px yellow;
+    padding-left:10px;
+    padding-right:10px;
+    float:left;
+}
+#ScrollBox {
+    color:#fff;
+    padding:5px;
+    font-size:32px;
+    text-shadow:0 0 6px yellow;
+    padding-left:10px;
+    padding-right:10px;
+    float:left;
+}
+.btn-group {
+    text-align:center;
+    margin:20px auto;
+}
+.btn {
+    background:url("../images/button1.png") no-repeat center center;
+    color:#fff;
+    text-shadow:0 0 6px yellow;
+    border:none;
+    font-size:30px;
+    width:151px;
+    height:49px;
+    cursor: pointer;
+}
+.btn:hover {
+    background:url("../images/button2.png") no-repeat center center;
+}
+.reset {
+    opacity: 0.1;
+    float:right;
+}
+.reset:hover {
+    opacity: 1;
+}
+.info {
+    display:none;
+}
+/* 抽奖完成动画 */
+#Animate {
+    background:#ca020d;
+    border:5px solid yellow;
+    color:yellow;
+    text-shadow:0 0 6px yellow;
+    box-shadow: 0,5px 5px #000;
+    width:460px;
+    height:160px;
+    line-height:160px;
+    position: fixed;
+    margin-top:-80px;
+    margin-left:-230px;
+    left:50%;
+    top:-500px;
+    text-align:center;
+    font-size:72px;
+    border-radius: 10px;
+    opacity: 0;
+}
+/* css3 动画效果 */
+
+/* 跑马灯 */
+@keyframes duang {
+    0% {border-color: yellow;
+        box-shadow:0 0 6px yellow;
+    }
+    100% {border-color: #a30000;
+        box-shadow:0 0 6px #a30000;}
+}
+/* 鼓锤 */
+.scroll {
+    position: fixed;
+    display:none;
+}
+.scroll img {
+    width:100%;
+    height:auto; 
+ }
+
+.scroll-left-1 {
+    left:6%;
+    transform:rotate(-20deg);
+    width:30px;
+    bottom:0;
+}
+.scroll-left-2 {
+    left:8%;
+    transform:rotate(-20deg);
+    width:26px;
+    bottom:2%;
+}
+.scroll-left-3 {
+    left:11%;
+    transform:rotate(-20deg);
+    width:18px;
+    bottom:2%;
+}
+.scroll-left-4 {
+    left:12%;
+    transform:rotate(-20deg);
+    width:16px;
+    bottom:2%;
+}
+.scroll-right-1 {
+    right:5%;
+    transform:rotate(-20deg);
+    width:30px;
+    bottom:0;
+}
+.scroll-right-2 {
+    right:7%;
+    transform:rotate(-20deg);
+    width:26px;
+    bottom:2%;
+}
+.scroll-right-3 {
+    right:11%;
+    transform:rotate(-20deg);
+    width:18px;
+    bottom:2%;
+}
+.scroll-right-4 {
+    right:12%;
+    transform:rotate(-20deg);
+    width:16px;
+    bottom:2%;
+}
+.playdrum-1 {
+    animation:playdrum1 .1s alternate infinite;
+}
+.playdrum-2 {
+    animation:playdrum2 .1s alternate infinite;
+}
+/* 敲鼓动画 */
+@keyframes playdrum1
+{
+    from {transform:rotate(0deg)}
+    to {transform:rotate(-20deg)}
+}
+@keyframes playdrum2
+{
+    from {transform:rotate(-20deg)}
+    to {transform:rotate(0deg)}
+}
